@@ -4,7 +4,7 @@ katz_deli = []
 
 def line(katz_deli)
   if katz_deli.size == []
-    puts "there is nobody in line."
+    puts "The line is currently empty."
   else
     y = []
     katz_deli.each_with_index do |name, index|

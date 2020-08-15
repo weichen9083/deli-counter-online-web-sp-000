@@ -3,14 +3,18 @@
 katz_deli = []
 
 def line(katz_deli)
-  if katz_deli.size == []
+
+  if katz_deli == []
     puts "The line is currently empty."
-  else
-    y = []
-    katz_deli.each_with_index do |name, index|
-      y << "#{index+1}. #{name}"
+  else 
+    counter = 1
+      y = []
+      katz_deli.each do |index| 
+      y << ("#{counter}. #{index}")
+      counter+=1
     end 
-    puts ("The line is currently: #{y.join(" ")}")
+    puts "The line is currently: #{y.join(" ")}"
+    
   end 
 end 
 
